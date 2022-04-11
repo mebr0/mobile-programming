@@ -2,6 +2,11 @@
 
 Course of mobile programming with React Native
 
+## Labs
+
+- [Lab1](lab1) - javascript, react.js
+- [Lab2](lab2) - mobile apps: react native, flutter, etc
+
 ## Course Syllabus
 
 - JavaScript
