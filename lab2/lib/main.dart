@@ -30,7 +30,6 @@ class _PomodoroState extends State<Pomodoro> {
 
   int seconds = 0;
   double percent = 0;
-  double part = 0;
   Phase current = Phase.none;
 
   late Timer timer;
@@ -63,7 +62,6 @@ class _PomodoroState extends State<Pomodoro> {
   _stop() {
     setState(() {
       seconds = 0;
-      part = 0;
       current = Phase.none;
     });
 
@@ -74,7 +72,6 @@ class _PomodoroState extends State<Pomodoro> {
     current = phase;
     percent = 0;
     seconds = _max();
-    part = seconds / 100;
   }
 
   int _max() {
