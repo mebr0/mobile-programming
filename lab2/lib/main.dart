@@ -28,9 +28,9 @@ class _PomodoroState extends State<Pomodoro> {
 
   static NumberFormat format = NumberFormat("00");
 
+  Phase current = Phase.none;
   int seconds = 0;
   double percent = 0;
-  Phase current = Phase.none;
 
   late Timer timer;
 
@@ -61,8 +61,9 @@ class _PomodoroState extends State<Pomodoro> {
 
   _stop() {
     setState(() {
-      seconds = 0;
       current = Phase.none;
+      seconds = 0;
+      percent = 0;
     });
 
     timer.cancel();
@@ -70,8 +71,8 @@ class _PomodoroState extends State<Pomodoro> {
 
   _reset(Phase phase) {
     current = phase;
-    percent = 0;
     seconds = _max();
+    percent = 0;
   }
 
   int _max() {
@@ -125,7 +126,8 @@ class _PomodoroState extends State<Pomodoro> {
                     animateFromLastPercent: true,
                     radius: 300.0,
                     lineWidth: 20.0,
-                    backgroundColor: Colors.white24,
+                    arcType: ArcType.FULL,
+                    arcBackgroundColor: Colors.white24,
                     progressColor: Colors.white30,
                     center: Text(
                       _timeStr(),
