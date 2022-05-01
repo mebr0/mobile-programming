@@ -4,9 +4,10 @@ Course of mobile programming with React Native
 
 ## Labs
 
-- [Lab1](lab1) - javascript, react.js
-- [Lab2](lab2) - mobile apps: react native, flutter, etc
+- [Lab1](lab1) - todo app: web version: javascript, react.js
+- [Lab2](lab2) - pomodoro app: widgets
 - [Midterm](midterm) - todo app
+- [Lab3](lab3) - news app: navigation, API calls
 
 ## Course Syllabus
 
