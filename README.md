@@ -8,6 +8,7 @@ Course of mobile programming with React Native
 - [Lab2](lab2) - pomodoro app: widgets
 - [Midterm](midterm) - todo app
 - [Lab3](lab3) - news app: navigation, API calls
+- [Lab4](lab4) - color picker app: state management
 
 ## Course Syllabus
 
